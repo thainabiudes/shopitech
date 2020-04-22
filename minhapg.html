@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopi</title>
+    <link rel="stylesheet" href="minhapg.css">
+</head>
+<body>
+    <section>
+        <h1>
+            <a href="https://app.shopi.com.br/">
+              <img src="logo.png" alt="Shopi" />
+            </a>
+        </h1>
+        <input type="text" placeholder="CNPJ da empresa" id="cnpj" class="grande" onkeypress='return SomenteNumero(event)' maxlength="14"> <br>
+        <input type="text" placeholder="Nome da empresa" id="nomeEmpresa" class="grande" maxlength="50"> <br>
+        <input type="text" placeholder="Nome do responsável" id="nomeResponsavel" class="grande" onkeypress='return SomenteLetra(event)' maxlength="50" > <br>
+        <input type="text" placeholder="Telefone" id="telefone" class="tels" onkeypress='return SomenteNumero(event)' maxlength="12">
+        <input type="text" placeholder="Celular" id="celular" class="tels" onkeypress='return SomenteNumero(event)' maxlength="12"> <br>
+        <input type="email" placeholder="E-mail" id="email" class="grande" maxlength="50"> <br>
+        <input type="password" placeholder="Senha" id="senha" class="grande" maxlength="15"> <br>
+        <input type="password" placeholder="Confirmar senha" id="confirma" class="grande" maxlength="15"> <br>
+        <input type="button" id="botao" value="Vamos começar ->" onclick="comecar()">
+        <p>Já tem cadastro? Clique <a href="https://app.shopi.com.br/index.php">aqui</a> para realizar login</p>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="minhapg.js"></script>
+</body>
+</html>
